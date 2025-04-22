@@ -1,0 +1,45 @@
+<div class="cel">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="javs.js" defer></script>
+
+  <div class="selected-pizza">
+    <img
+      id="pizza-img"
+      src="https://raw.githubusercontent.com/andreciornavei/flutter-pizza/master/example/assets/images/pizzas/chicken.png"
+      class="pizza-img"
+    />
+  </div>
+
+  <div class="subtitles">Choose your flavour</div>
+  <div id="container" class="pizza-f-container">
+    <i id="arrow-left" data-feather="chevron-left"></i>
+    <i id="arrow-right" data-feather="chevron-right"></i>
+    <div id="pizza-flavours" class="pizza-flavours"></div>
+  </div>
+
+  <div class="subtitles">Size</div>
+  <div id="pizza-size" class="pizza-size">
+    <input type="radio" name="size" id="p" value="p" />
+    <label for="p">P</label>
+    <input type="radio" name="size" id="m" value="m" checked />
+    <label for="m">M</label>
+    <input type="radio" name="size" id="g" value="g" />
+    <label for="g">G</label>
+  </div>
+  <div class="total-container">
+    <div class="quantity">
+      <i id="minus" data-feather="minus-circle"></i>
+      <input type="text" class="pizza-counter" value="1" id="pizza-counter" />
+      <i id="plus" data-feather="plus-circle"></i>
+    </div>
+    <div class="total">
+      $
+      <span id="price">35</span>
+    </div>
+  </div>
+  <div class="order">
+    <button>Order now</button>
+  </div>
+</div>
+
+<script src="https://unpkg.com/feather-icons"></script>

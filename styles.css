@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 150px;
+
+  background: #F3B664;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+}
+
+.cel {
+  background: #fff;
+  width: 320px;
+  height: 650px;
+  border-radius: 34px;
+}
+
+.selected-pizza {
+  background: center / contain no-repeat   url("https://i.imgur.com/3WPtwSm.png");
+  width: 100%;
+  height: 350px;
+  padding: 30px 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pizza-img {
+  width: 270px;
+  transition: 0.25s ease-out;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  width: 100%;
+  text-align: center;
+}
+
+.subtitles {
+  width: 100%;
+  color: grey;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+#container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.pizza-flavours {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 300%;
+  height: 50px;
+  transition: 0.25s ease-in-out;
+  overflow-x: scroll;
+  font-weight: bold;
+}
+
+.pizza-flavours label {
+  font-size: 1.4rem;
+}
+
+#arrow-left {
+  height: 50px;
+  top: 0;
+  left: 25px;
+  position: absolute;
+  z-index: 99;
+  color: #F3B664;
+}
+
+#arrow-right {
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  z-index: 99;
+  color: #F3B664;
+}
+
+.pizza-size {
+  margin: 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pizza-size {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pizza-size {
+  input[type="radio"] {
+    &:checked {
+      & + label {
+        color: #fff;
+        border: 2px solid #99101c;
+        background: #99101c;
+      }
+    }
+  }
+}
+
+.pizza-size label {
+  color: #99101c;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #99101c;
+  border-radius: 50%;
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #F3B664;
+  border: 2px solid #fff;
+  color: #000;
+  border-radius: 16px;
+  padding: 7px 20px;
+}
+
+.order {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pizza-counter {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  pointer-events: none;
+}
+
+.total-container {
+  height: 50px;
+  margin: 20px 0;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.total {
+  font-size: 1.5rem;
+  color: #000;
+}
